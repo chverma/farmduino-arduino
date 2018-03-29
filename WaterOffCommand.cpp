@@ -18,7 +18,7 @@ WaterOffCommand::~WaterOffCommand() {
 void WaterOffCommand::execute(String parameter){
   Servo waterServo;
   int pinNo = parameter.toInt();
-	waterServo.attach(pinNo);
+  waterServo.attach(pinNo);
   //Serial connection.
   waterServo.write(90);  // set servo to mid-point
   Serial.println(" water off");

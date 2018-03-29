@@ -10,13 +10,13 @@
 
 #include "Command.h"
 #include "Arduino.h"
-#include <Servo.h> 
+#include <Servo.h>
 
 class WaterOffCommand: public Command {
 public:
-	WaterOffCommand();
-	virtual ~WaterOffCommand();
-	void execute(String parameter);
+  WaterOffCommand();
+  virtual ~WaterOffCommand();
+  void execute(String parameter);
 private:
   Servo waterServo;
 };

@@ -8,8 +8,7 @@
 #include "WaterOnCommand.h"
 
 WaterOnCommand::WaterOnCommand() {
-	instruction = "waterOff";
-
+  instruction = "waterOff";
 }
 
 WaterOnCommand::~WaterOnCommand() {
@@ -18,7 +17,7 @@ WaterOnCommand::~WaterOnCommand() {
 void WaterOnCommand::execute(String parameter){
   Servo waterServo;
   int pinNo = parameter.toInt();
-	waterServo.attach(pinNo);
+  waterServo.attach(pinNo);
   //Serial connection.
   waterServo.write(0);  // set servo to mid-point
   Serial.println(" water on");
