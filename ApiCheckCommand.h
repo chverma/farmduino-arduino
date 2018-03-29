@@ -8,17 +8,17 @@
 #ifndef APICHECKCOMMAND_H_
 #define APICHECKCOMMAND_H_
 
-#include "Command.h"
+#include "ApiCommand.h"
 #include "Arduino.h"
-#include <Servo.h> 
-#include "inetGSM.h"
+#include <Servo.h>
+#include "Command.h"
 
-class ApiCheckCommand: public Command {
+
+class ApiCheckCommand: public ApiCommand {
 public:
-	ApiCheckCommand();
-	virtual ~ApiCheckCommand();
-	void execute(String parameter);
-  char msg[500];
+  ApiCheckCommand(int *ok);
+  virtual ~ApiCheckCommand();
+  void execute(String parameter);
 };
 
 #endif /* APICHECKCOMMAND_H_ */
