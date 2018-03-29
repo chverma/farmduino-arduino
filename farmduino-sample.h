@@ -1,10 +1,10 @@
-// NOTE: Copy this file to farmudino.h and replace CONSTANTS to your endpoint
-// server setup
+// NOTE: Copy this file to farmduino.h.
+// Replace FARMDUINO_SERVER by your API URL
 #ifndef FARMDUINO_H_
 #define FARMDUINO_H_
 
-#define API_CHECK "path to check api"
-#define API_GET_WATER "path to get water cron"
+#define API_CHECK "/rest/v1/api/check"
+#define API_GET_WATER "/rest/v1/cron/get/water"
 #define FARMDUINO_SERVER "url api server"
 #define SERVO_PIN "34"
 
